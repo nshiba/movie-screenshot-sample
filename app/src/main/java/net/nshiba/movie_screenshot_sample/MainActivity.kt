@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, TextureViewActivity::class.java))
         }
         findViewById<Button>(R.id.screenshot_button).setOnClickListener {
-
+            ScreenshotHelper.takeScreenshotForNormalView(this, this.window.decorView.rootView)
         }
     }
 }
