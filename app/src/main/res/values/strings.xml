@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">movie-screenshot-sample</string>
+    <string name="surface_view_button_text">SurfaceView</string>
+    <string name="texture_view_button_text">TextureView</string>
+    <string name="screenshot_button_text">Take Screenshot</string>
 </resources>
